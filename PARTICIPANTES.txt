@@ -1,7 +1,13 @@
-Global Solution 2026.2 – Application Development
-
-Participantes e divisão do trabalho (preencher):
-
-1. Nome completo – RM – Parte do trabalho (ex.: função serverless e deploy no Vercel)
-2. Nome completo – RM – Parte do trabalho (ex.: busca, painel de previsões e lógica em app.js)
-3. Nome completo – RM – Parte do trabalho (ex.: interface, CSS, acessibilidade e README)
+Global Solution 2026.2 - Application Development
+Projeto: Meu Ponto
+ 
+Participantes e divisão do trabalho:
+ 
+1. Gustavo Franzoti Gonçalves - RM566983
+   Função serverless (api/olhovivo.js), autenticação com a API Olho Vivo,
+   deploy no Vercel, busca de pontos e painel de previsões (app.js):
+   cálculo dos minutos e atualização automática.
+ 
+2. Maykon Santana Fonseca - RM567041
+   Interface e responsividade (index.html e style.css), modo de alto contraste
+   e fonte grande, mapa com Leaflet, favoritos e README.

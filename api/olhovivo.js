@@ -8,8 +8,12 @@ const PERMITIDOS = [
 let cookie = null;
 
 async function autenticar() {
-  const r = await fetch(`${BASE}/Login/Autenticar?token=${process.env.OLHOVIVO_TOKEN}`, { method: 'POST' });
-  if ((await r.text()).trim() !== 'true') throw new Error('Token inválido ou não liberado');
+  const token = (process.env.OLHOVIVO_TOKEN || '').trim().replace(/^["']|["']$/g, '');
+  const r = await fetch(`${BASE}/Login/Autenticar?token=${token}`, { method: 'POST' });
+  const corpo = (await r.text()).trim();
+  if (corpo !== 'true') {
+    throw new Error(`Login recusado pela SPTrans (HTTP ${r.status}, resposta: ${corpo.slice(0, 80) || 'vazia'})`);
+  }
   cookie = r.headers.getSetCookie().map(c => c.split(';')[0]).join('; ');
 }
 
