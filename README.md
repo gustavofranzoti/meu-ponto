@@ -5,7 +5,7 @@ Painel web com os **próximos ônibus de qualquer ponto de São Paulo**, em temp
 > Projeto da **Global Solution 2026.2** – Application Development (FIAP, Ciência da Computação, 2º ano).
 > Desafio: *Citizen Intelligence & Predictive Analytics* – monitoramento da cidade para melhorar a qualidade de vida do cidadão.
 
-🔗 **Aplicação:** https://SEU-LINK.vercel.app  <!-- troque pelo link do Vercel -->
+🔗 **Aplicação:** https://meu-ponto-fiap.vercel.app/
 
 ---
 
