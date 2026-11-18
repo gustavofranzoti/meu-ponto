@@ -1,0 +1,7 @@
+Global Solution 2026.2 – Application Development
+
+Participantes e divisão do trabalho (preencher):
+
+1. Nome completo – RM – Parte do trabalho (ex.: função serverless e deploy no Vercel)
+2. Nome completo – RM – Parte do trabalho (ex.: busca, painel de previsões e lógica em app.js)
+3. Nome completo – RM – Parte do trabalho (ex.: interface, CSS, acessibilidade e README)

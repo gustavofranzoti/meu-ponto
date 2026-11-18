@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Ponto – próximos ônibus em São Paulo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Meu Ponto</h1>
+    <button id="btn-contraste" class="chip" aria-pressed="false">Alto contraste e fonte grande</button>
+  </header>
+
+  <main>
+    <section aria-labelledby="t-busca">
+      <h2 id="t-busca">Encontre seu ponto</h2>
+      <form id="form-busca" class="busca">
+        <label for="termo" class="sr">Nome do ponto ou endereço</label>
+        <input id="termo" type="search" placeholder="Ex.: Paulista, Estação Santo André" required>
+        <button type="submit">Buscar</button>
+      </form>
+      <p id="msg-busca" class="aviso" role="status"></p>
+      <ul id="resultados" class="lista"></ul>
+    </section>
+
+    <section id="favoritos-sec" hidden aria-labelledby="t-fav">
+      <h2 id="t-fav">Pontos favoritos</h2>
+      <ul id="favoritos" class="lista"></ul>
+    </section>
+
+    <section id="painel" hidden aria-labelledby="t-painel">
+      <div class="painel-topo">
+        <div>
+          <h2 id="t-painel"></h2>
+          <p id="endereco" class="aviso"></p>
+        </div>
+        <button id="btn-fav" class="chip" aria-pressed="false">☆ Favoritar</button>
+      </div>
+      <div class="controles">
+        <label class="check"><input type="checkbox" id="so-acessiveis"> Só veículos acessíveis</label>
+        <span id="atualizacao" class="aviso" role="status"></span>
+      </div>
+      <ul id="previsoes" class="lista"></ul>
+      <div id="mapa" aria-label="Mapa do ponto e dos ônibus"></div>
+    </section>
+  </main>
+
+  <footer>Dados: SPTrans – API Olho Vivo. Mapa: © colaboradores do OpenStreetMap.</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
